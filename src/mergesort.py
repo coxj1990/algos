@@ -1,5 +1,5 @@
 def sort(L):
-    if len(L) <= 1:
+    if len(L) < 2:
         return L
     mid = len(L) // 2
     left = sort(L[:mid])
@@ -10,6 +10,5 @@ def sort(L):
             res.append(left.pop(0))
         else:
             res.append(right.pop(0))
-    if left or right:
-        res += left + right
+    res += left + right
     return res
