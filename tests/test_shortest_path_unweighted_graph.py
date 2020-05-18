@@ -5,7 +5,7 @@ def test_trivial():
     assert shortest_path(G, 0, 0) == [0]
 
 def test_nontrivial():
-    #  0---1    5
+    #  0---1   5
     #  |  /|\
     #  | / | 2
     #  |/  |/

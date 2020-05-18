@@ -5,8 +5,6 @@ def test_trivial():
     dists = shortest(G, 0)
     assert dists[0] == 0
 
-test_trivial()
-
 def test_nontrivial():
     #  1---2
     #  |\  |
