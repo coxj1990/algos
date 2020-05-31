@@ -1,3 +1,8 @@
+# O(nlogn) average time
+# O(nlogn) worst-case time
+# O(n) space
+# Stable
+
 def sort(L):
     if len(L) < 2:
         return L

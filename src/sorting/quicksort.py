@@ -1,3 +1,8 @@
+# O(nlogn) average time
+# O(n^2) worst-case time
+# O(logn) space
+# Not stable
+
 def partition(L, first, last):
     pivot = L[first]
     i = first + 1

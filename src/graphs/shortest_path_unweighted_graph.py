@@ -1,3 +1,7 @@
+# O(m + n) time
+# m = number of edges
+# n = number of nodes
+
 def shortest_path(G, start, dest):
     q = [[start]]
     visited = set([start])

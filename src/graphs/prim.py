@@ -1,3 +1,7 @@
+# O(mlogn) time
+# m = number of edges
+# n = number of nodes
+
 import random
 import heapq as hq
 

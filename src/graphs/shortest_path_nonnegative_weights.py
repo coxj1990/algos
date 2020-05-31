@@ -1,3 +1,7 @@
+# O(mlogn) time
+# m = number of edges
+# n = number of nodes
+
 from collections import defaultdict
 import heapq as hq
 

@@ -1,3 +1,8 @@
+# O(n^2) average time
+# O(n^2) worst-case time
+# O(1) space
+# Not stable
+
 def sort(L):
     n = len(L)
     for i in range(n):

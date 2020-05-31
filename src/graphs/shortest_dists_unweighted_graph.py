@@ -1,3 +1,7 @@
+# O(m + n) time
+# m = number of edges
+# n = number of nodes
+
 def shortest(G, start):
     n = len(G)
     dists = [float('inf') for _ in range(n)]

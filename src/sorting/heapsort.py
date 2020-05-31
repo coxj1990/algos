@@ -1,3 +1,8 @@
+# O(nlogn) average time
+# O(nlogn) worst-case time
+# O(1) space
+# Not stable
+
 import heapq as hq
 
 def sort(L):
