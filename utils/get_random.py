@@ -1,5 +1,6 @@
 import os
 import random
+import argparse
 from glob import glob
 
 def get_basename(filename):
@@ -24,8 +25,14 @@ def get_algos():
     return [get_basename(f) for f in filenames if is_algo(f)]
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--count', action='store_true')
+    args = parser.parse_args()
     algos = get_algos()
-    print(random.choice(algos))
+    if args.count:
+        print(len(algos))
+    else:
+        print(random.choice(algos))
 
 if __name__ == '__main__':
     main()
