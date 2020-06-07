@@ -1,4 +1,4 @@
-from src.stats.resevoir_sampling import Resevoir
+from src.math.resevoir_sampling import Resevoir
 from collections import Counter
 
 def normalize(counter):

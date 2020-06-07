@@ -1,4 +1,4 @@
-from src.stats.running_mean import RunningMean
+from src.math.running_mean import RunningMean
 
 def test_trivial():
     rm = RunningMean()
