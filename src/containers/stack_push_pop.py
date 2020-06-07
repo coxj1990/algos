@@ -1,10 +1,10 @@
 class Stack:
 
     def __init__(self):
-        self.q = []
+        self.s = []
 
     def push(self, x):
-        self.q.append(x)
+        self.s.append(x)
 
     def pop(self):
-        return self.q.pop()
+        return self.s.pop()
