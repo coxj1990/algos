@@ -8,3 +8,6 @@ class Stack:
 
     def pop(self):
         return self.s.pop()
+
+    def empty(self):
+        return len(self.s) == 0

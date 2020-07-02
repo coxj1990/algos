@@ -8,3 +8,6 @@ class Queue:
 
     def pop(self):
         return self.q.pop(0)
+
+    def empty(self):
+        return len(self.q) == 0
