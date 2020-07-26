@@ -7,7 +7,7 @@ def test_trivial_true():
 
 def test_trivial_false():
     head = LinkedListNode('a', LinkedListNode('b'))
-    assert is_palindrome(head)
+    assert not is_palindrome(head)
 
 def test_nontrivial_true():
     head = LinkedListNode('a', LinkedListNode('b', LinkedListNode('a')))
