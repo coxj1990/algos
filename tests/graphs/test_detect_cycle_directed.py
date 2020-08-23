@@ -1,4 +1,4 @@
-from src.graphs.detect_cycle import has_cycle
+from src.graphs.detect_cycle_directed import has_cycle
 
 def test_trivial():
     G = [[]]
