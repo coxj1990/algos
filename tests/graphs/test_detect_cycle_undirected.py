@@ -1,8 +1,12 @@
-from src.graphs.connected_components_undirected import get_num_components
+from src.graphs.detect_cycle_undirected import has_cycle
 
 def test_trivial():
-    G = []
-    assert get_num_components(G) == 0
+    G = [[]]
+    assert not has_cycle(G)
+
+def test_trivial_self_loop():
+    G = [[0]]
+    assert has_cycle(G)
 
 def test_nontrivial():
     #  0---1
@@ -12,4 +16,4 @@ def test_nontrivial():
     #  4   3
 
     G = [[1, 4], [0, 4], [3], [2], [0, 1]]
-    assert get_num_components(G) == 2
+    assert has_cycle(G)
