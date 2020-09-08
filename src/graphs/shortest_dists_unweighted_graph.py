@@ -1,18 +1,16 @@
 # O(m + n) time
 # m = number of edges
 # n = number of nodes
+from collections import defaultdict
 
 def shortest(G, start):
-    n = len(G)
-    dists = [float('inf') for _ in range(n)]
+    dists = defaultdict(lambda : float('inf'))
     dists[start] = 0
-    visited = set([start])
     q = [start]
     while q:
         curr = q.pop(0)
         for child in G[curr]:
-            if child not in visited:
-                visited.add(child)
-                q.append(child)
+            if child not in dists:
                 dists[child] = dists[curr] + 1
+                q.append(child)
     return dists
